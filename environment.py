@@ -56,21 +56,18 @@ class CustomEnvironment(ParallelEnv):
 
         # Get observations
         observations = self._generate_local_observations()
-        
-
-        # Get dummy infos (not used in this example)
-        #infos = {"prisoner": {}, "guard": {}}
 
         return observations, rewards
 
     def render(self):
         
-        # render is Kalina
+        # TODO figure out render method
         pass
 
     @functools.lru_cache(maxsize=None)
     def observation_space(self, agent):
-        #return MultiDiscrete([7 * 7 - 1] * 3)
+        # TODO figure out observation dims
+        
         pass
 
     @functools.lru_cache(maxsize=None)
@@ -99,6 +96,7 @@ class CustomEnvironment(ParallelEnv):
         return observations, {}
 
     def _compute_reward():
+    	# TODO figure out reward mechanism
         pass
 
 
